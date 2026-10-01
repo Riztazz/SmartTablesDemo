@@ -94,15 +94,15 @@ void USmartTableDemoHub::FillMenuTable()
 
     const FDemoEntry Demos[] = {
         { TEXT( "Items" ), TEXT( "A UObject with variables on it. Point the table at the class and it reads the properties off it. Set up in the Details panel or from C++." ) },
-        { TEXT( "DataTable" ), TEXT( "Rows out of a DataTable asset. The row struct is typed, so cells come out as number boxes, sliders and checkboxes." ) },
+        { TEXT( "DataTable" ), TEXT( "Rows out of a DataTable asset. The row struct is typed, so cells come out as number boxes, spin boxes and tick boxes." ) },
         { TEXT( "CSV file" ), TEXT( "Reads a .csv off disk. No types in a text file, so every field is a text box. Save writes it back." ) },
         { TEXT( "JSON file" ), TEXT( "Same thing with .json. Edits stay in memory until you save." ) },
         { TEXT( "One million rows" ), TEXT( "Async model and virtualised rendering of a million rows. Sorting runs off the game thread." ) },
-        { TEXT( "Server browser" ), TEXT( "A table used in an actual game screen. Resize, reorder, two level sort and filtering, all off the header." ) },
+        { TEXT( "Server browser" ), TEXT( "A table used in an actual game screen. Resize, reorder and two level sort off the header, and a search box above it." ) },
         { TEXT( "Pairs" ), TEXT( "A memory game. Every column is a position and every cell is a card that animates itself in Sequencer." ) },
         { TEXT( "Keys without Enhanced Input" ), TEXT( "Items demo with keyboard input through OnKeyDown. No Enhanced Input." ) },
         { TEXT( "Off screen, virtual pointer" ), TEXT( "The Items table drawn off screen at a draw scale of 1.173 and clicked through a virtual Slate user, which is what a diegetic screen does. Header clicks, resize edges and menus all behave differently in here." ), false },
-        { TEXT( "Items with MVVM" ), TEXT( "The Items demo with a viewmodel for each row. Every cell names an Item Setter and binds its widgets in its Widget Blueprint, with no graph. A feed moves one pressure a few times a second, and only that cell draws again." ) },
+        { TEXT( "Items with MVVM" ), TEXT( "The Items demo with a viewmodel for each row. Three cells name an Item Setter and bind their widgets in their Widget Blueprints, with no graph. A feed moves one pressure a few times a second, and that row reads its values again." ) },
     };
 
     TArray< UObject * > Items;
