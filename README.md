@@ -5,7 +5,8 @@ screens. It doesn't hold the plugin.
 
 ## Open it
 
-1. Get Smart Tables on FAB and install it to engine 5.8.
+1. Get Smart Tables on FAB, https://www.fab.com/listings/c2cddc8e-0844-41bc-b58d-9cedd12f71fd, and install
+   it to engine 5.8.
 2. Open `SmartTablesDemo.uproject`. The project has a C++ module, so the editor asks to build it the first
    time.
 3. Press Play. The hub lists the nine demos.
